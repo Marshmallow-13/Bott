@@ -1,0 +1,22 @@
+﻿<Window x:Class="Bott.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bott"
+        mc:Ignorable="d"
+        Title="MainWindow" Loaded="OnLoaded" ResizeMode="CanResize" SizeToContent="WidthAndHeight">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+		<GroupBox Grid.Column="1" Header="Ответ сервера">
+			<ListBox x:Name="logs"/>
+		</GroupBox>
+		<GroupBox Grid.Column="2" Header="Обновления [события]">
+			<ListBox x:Name="updates"/>
+		</GroupBox>
+	</Grid>
+</Window>
